@@ -57,5 +57,8 @@ function generateRandomNumber(num) {
       "One part of wisdom is knowing what you don\'t need anymore and letting it go. Jane Fonda",
       "First of all, to understand truth you must stand alone, entirely and wholly alone. No Master, no teacher, no guru, no system, no self-discipline will ever lift for you the veil which conceals wisdom. Wisdom is the understanding of enduring values and the living of those values. No one can lead you to wisdom. Jiddu Krishnamurti",
   ];
-  
-    console.log(wisdom[generateRandomNumber(wisdom.length)])
+    console.log('\n Brace yourself for the wisdom!\n \n \n')
+    function tellWisdom(){
+        setTimeout(()=>console.log(wisdom[generateRandomNumber(wisdom.length)]+'\n'), 4000)
+    };
+    tellWisdom();
